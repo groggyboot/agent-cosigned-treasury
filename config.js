@@ -1,8 +1,6 @@
 // config.js — the ONE file you edit (or override everything via environment).
 // Every script requires this and fails closed while a needed value still says
 // REPLACE_WITH_… , so you can never act against someone else's vault by accident.
-const os = require("os");
-
 module.exports = {
   // Your Squads v4 multisig CONFIG address (shown in the Squads UI after you
   // create the squad, or recovered from the vault address by findconfig.js).
@@ -20,7 +18,7 @@ module.exports = {
   // Path to the agent's keypair file: a JSON array secret key, i.e. the format
   // solana-keygen writes. This key can PROPOSE and add one approval — with a
   // 2-of-2 threshold it can never move funds alone.
-  KEYPAIR_PATH: process.env.KEYPAIR_PATH || os.homedir() + "/keys/agent-wallet.json",
+  KEYPAIR_PATH: process.env.KEYPAIR_PATH || "REPLACE_WITH_KEYPAIR_PATH",
 
   RPC_URL: process.env.RPC_URL || "https://api.mainnet-beta.solana.com",
 };

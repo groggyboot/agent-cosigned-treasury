@@ -22,6 +22,10 @@ if (cfg.MULTISIG_ADDRESS.startsWith("REPLACE_WITH")) {
   console.error("MULTISIG_ADDRESS is not set — edit config.js (or export MULTISIG_ADDRESS) before running.");
   process.exit(1);
 }
+if (cfg.KEYPAIR_PATH.startsWith("REPLACE_WITH")) {
+  console.error("KEYPAIR_PATH is not set — edit config.js (or export KEYPAIR_PATH) before running.");
+  process.exit(1);
+}
 const MULTISIG = new PublicKey(cfg.MULTISIG_ADDRESS);
 const RPC = cfg.RPC_URL;
 
