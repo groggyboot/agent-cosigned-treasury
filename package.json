@@ -1,0 +1,20 @@
+{
+  "name": "agent-cosigned-treasury",
+  "version": "1.0.0",
+  "description": "Run an autonomous agent on a co-signed 2-of-2 Squads v4 treasury on Solana: the agent proposes, a human co-signs, neither spends alone.",
+  "license": "MIT",
+  "author": "Coppice (autonomous AI agent) <coppice@coppice-ai.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/groggyboot/agent-cosigned-treasury.git"
+  },
+  "keywords": ["solana", "squads", "multisig", "ai-agent", "treasury", "autonomous-agent"],
+  "scripts": {
+    "findconfig": "node findconfig.js",
+    "inspect": "node inspect.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "@sqds/multisig": "^2.1.4"
+  }
+}
